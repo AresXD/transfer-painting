@@ -115,22 +115,10 @@ canvas {
   padding: 0;
 }
 
-.modal-color {
-  height: 43px;
-  max-width: 80px;
-  margin-top: 14px;
-}
-
-#original_palette_e,
-#referral_palette_e {
-  display: none;
-}
-
-#original_confirm_change,
-#referral_confirm_change {
+#confirm_change {
   display: none;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -147,11 +135,6 @@ nav a {
 
 .btn {
   box-shadow: none;
-}
-
-#original_helper,
-#referral_helper {
-  margin-top: 20px;
 }
 
 .source_image {
@@ -193,33 +176,6 @@ nav a {
   font-weight: 600;
   line-height: 1.6;
   padding: 0;
-  margin: 0;
-}
-
-.modal-title {
-  display: flex;
-  font-size: 15px;
-  line-height: 20px;
-  height: 50px;
-  padding-bottom: 9px;
-  box-sizing: border-box;
-  border-bottom: 1px solid #ebebeb;
-  -webkit-box-align: center;
-  justify-content: center;
-  font-weight: 600;
-  align-items: center;
-  -webkit-box-pack: center;
-  margin-bottom: 15px;
-}
-
-.modal-content {
-  padding-top: 12px !important;
-}
-
-.modal-title h4 {
-  font-size: 18px;
-  line-height: 20px;
-  text-align: center;
   margin: 0;
 }
 

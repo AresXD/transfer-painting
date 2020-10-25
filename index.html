@@ -111,24 +111,6 @@
                 id="original_palette"
                 class="row source_original_image_area source_image_area"
               ></div>
-              <div id="original_palette_e" class="row"></div>
-
-              <div id="original_confirm_change" class="row" style="margin-left: 0; margin-right: 0;">
-                <div class="center-align" style="display: inline-block; padding-right: 10px;">
-                  <a
-                    class="btn waves-effect waves-light"
-                    onclick="OriginalPalette.putImage(OriginalPalette.img);"
-                    >还原</a
-                  >
-                </div>
-                <div class="center-align" style="display: inline-block; padding-left: 10px;">
-                  <a
-                    class="btn waves-effect waves-light"
-                    onclick="OriginalPalette.colorTransform(original_color_list1, original_color_list2);OriginalPalette.putImage(OriginalPalette.img_copy);"
-                    >确认更改</a
-                  >
-                </div>
-              </div>
             </div>
             <div class="referral-image-card card">
               <div class="card-header">
@@ -151,28 +133,24 @@
                 id="referral_palette"
                 class="row source_referral_image_area source_image_area"
               ></div>
-              <div id="referral_palette_e" class="row"></div>
-
-              <div id="referral_confirm_change" class="row" style="margin-left: 0; margin-right: 0;">
-                <div class="center-align" style="display: inline-block; padding-right: 10px;">
-                  <a
-                    class="btn waves-effect waves-light"
-                    onclick="ReferralPalette.putImage(ReferralPalette.img);"
-                    >还原</a
-                  >
-                </div>
-                <div class="center-align" style="display: inline-block; padding-left: 10px;">
-                  <a
-                    class="btn waves-effect waves-light"
-                    onclick="ReferralPalette.colorTransform(referral_color_list1, referral_color_list2);ReferralPalette.putImage(ReferralPalette.img_copy);"
-                    >确认更改</a
-                  >
-                </div>
-              </div>
             </div>
           </div>
-          <div id="original_modals" class="row"></div>
-          <div id="referral_modals" class="row"></div>
+          <div id="confirm_change" class="row" style="margin-left: 0; margin-right: 0;">
+            <div class="center-align" style="display: inline-block; padding-right: 10px;">
+              <a
+                class="btn waves-effect waves-light"
+                onclick="OriginalPalette.putImage(OriginalPalette.img);"
+                >还原原始颜色</a
+              >
+            </div>
+            <div class="center-align" style="display: inline-block; padding-left: 10px;">
+              <a
+                class="btn waves-effect waves-light"
+                onclick="OriginalPalette.colorTransform(original_color_list1, referral_color_list2);OriginalPalette.putImage(OriginalPalette.img_copy);"
+                >迁移参照颜色</a
+              >
+            </div>
+          </div>
         </div>
       </div>
       <!-- container end -->
