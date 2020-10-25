@@ -15,15 +15,23 @@
     "no-unused-vars": "off"
   },
   "globals": {
-    "Palette": "readonly",
-    "Color": "readonly",
+    "OriginalPalette": "readonly",
+    "ReferralPalette": "readonly",
+    "OriginalColor": "readonly",
+    "ReferralColor": "readonly",
     "math": "readonly",
-    "color_list_rgb": "writable",
-    "color_list1": "writable",
-    "color_list2": "writable",
-    "change_list": "readonly",
-    "Ls": "readonly",
-    "Ls_user": "readonly",
+    "original_color_list_rgb": "writable",
+    "original_color_list1": "writable",
+    "original_color_list2": "writable",
+    "original_change_list": "readonly",
+    "original_Ls": "readonly",
+    "original_Ls_user": "readonly",
+    "referral_color_list_rgb": "writable",
+    "referral_color_list1": "writable",
+    "referral_color_list2": "writable",
+    "referral_change_list": "readonly",
+    "referral_Ls": "readonly",
+    "referral_Ls_user": "readonly",
     "$": "readonly"
   }
 }

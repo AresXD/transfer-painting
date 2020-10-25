@@ -121,12 +121,17 @@ canvas {
   margin-top: 14px;
 }
 
-#palette_e {
+#original_palette_e,
+#referral_palette_e {
   display: none;
 }
 
-#confirm_change {
+#original_confirm_change,
+#referral_confirm_change {
   display: none;
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
 }
 
 nav {
@@ -144,11 +149,12 @@ nav a {
   box-shadow: none;
 }
 
-#helper {
+#original_helper,
+#referral_helper {
   margin-top: 20px;
 }
 
-#source_image {
+.source_image {
   background: #fff;
   overflow: hidden;
   border-radius: 2px;
@@ -156,7 +162,13 @@ nav a {
   box-sizing: border-box;
 }
 
+.card-wrapper {
+  display: flex;
+  width: 100%;
+}
+
 .card {
+  flex: 1;
   margin-bottom: 10px;
   background: #fff;
   overflow: hidden;
