@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>迁绘 | 基于矢量图片颜色分布转化的一键化图像风格迁移</title>
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/materialize/0.97.2/css/materialize.min.css"
+      rel="stylesheet"
+    />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header>
+      <!-- nav bar -->
+      <nav>
+        <div class="nav-wrapper">
+          <div class="container">
+            <a href="http://www.scu.edu.cn/">
+              <span class="brand-logo"
+                >迁 <i class="fas fa-paint-brush"></i> 绘</span
+              >
+            </a>
+            <ul id="nav-mobile" class="right hide-on-small-only">
+              <li>
+                <a href="http://www.scu.edu.cn/"
+                  >孟晓源　郭钰香　曾和霖　文心怡　王兆基</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- nav bar end -->
+    </header>
+    <main>
+      <div class="main-bg"></div>
+      <!-- container -->
+      <div class="main-container container">
+        <!-- search -->
+        <div id="search" class="section">
+          <div class="big-logo">迁 <i class="fas fa-paint-brush"></i> 绘</div>
+          <div class="load-card card">
+            <div class="card-header">
+              <h5><i class="fas fa-upload"></i> 上传图像文件</h5>
+            </div>
+            <div class="card-content">
+              <div class="row" style="margin: 0;">
+                <div class="col s12 m8 l8 offset-m2 offset-l2">
+                  <form action="#">
+                    <div class="file-field input-field">
+                      <div class="btn" style="font-size: 1.2em;">
+                        <input id="file_path" type="file" />
+                        <i class="far fa-images"></i>
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input
+                          class="file-path validate"
+                          type="text"
+                          placeholder="点此上传图像文件"
+                        />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="image-card card">
+            <div class="card-header">
+              <h5 class="source_image_area">
+                <i class="far fa-image"></i> 图像
+              </h5>
+            </div>
+            <div class="card-content">
+              <div class="row source_image_area">
+                <div class="col s12 m8 l8 offset-m2 offset-l2">
+                  <canvas
+                    class="materialboxed z-depth-1"
+                    id="source_image"
+                  ></canvas>
+                </div>
+              </div>
+            </div>
+
+            <div id="palette" class="row source_image_area"></div>
+            <div id="palette_e" class="row"></div>
+          </div>
+          <div id="modals" class="row"></div>
+          <div id="confirm_change" class="row">
+            <div class="col s6 m3 center-align offset-m3">
+              <a
+                class="btn waves-effect waves-light"
+                onclick="Palette.putImage(Palette.img);"
+                >还原</a
+              >
+            </div>
+            <div class="col s6 m3 center-align">
+              <a
+                class="btn waves-effect waves-light"
+                onclick="Palette.colorTransform(color_list1, color_list2);Palette.putImage(Palette.img_copy);"
+                >确认更改</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- container end -->
+    </main>
+
+    <!-- footer -->
+    <footer class="footer-copyright">
+      <div class="container">
+        Copyright &copy; 2020 QianHui. All rights reserved.
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/mathjs/7.0.1/math.min.js"></script>
+    <script type="text/javascript" src="js/color.js"></script>
+    <script type="text/javascript" src="js/palette.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

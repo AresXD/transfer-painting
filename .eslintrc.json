@@ -1,0 +1,29 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": ["eslint:recommended", "plugin:vue/essential", "standard"],
+  "parserOptions": {
+    "ecmaVersion": 11
+  },
+  "plugins": ["vue"],
+  "rules": {
+    "camelcase": "off",
+    "space-before-function-paren": "off",
+    "no-multi-str": "off",
+    "no-unused-vars": "off"
+  },
+  "globals": {
+    "Palette": "readonly",
+    "Color": "readonly",
+    "math": "readonly",
+    "color_list_rgb": "writable",
+    "color_list1": "writable",
+    "color_list2": "writable",
+    "change_list": "readonly",
+    "Ls": "readonly",
+    "Ls_user": "readonly",
+    "$": "readonly"
+  }
+}

@@ -1,0 +1,259 @@
+html {
+  background: #000000;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC,
+    Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei,
+    sans-serif;
+  font-size: 15px;
+  color: #1a1a1a;
+}
+
+.main-bg {
+  z-index: -100;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#search {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+nav,
+.brand-logo {
+  background-color: #ffffff !important;
+  color: rgb(0, 132, 255) !important;
+}
+
+.btn {
+  margin: 2px;
+}
+
+.btn,
+.btn-large,
+.btn-small {
+  background: none !important;
+  color: #0084ff !important;
+  border-color: #0084ff !important;
+  margin: 0;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
+  background-color: rgba(0, 132, 255, 0.06) !important;
+  box-shadow: none !important;
+}
+
+a {
+  color: #8590a6 !important;
+}
+
+#results {
+  display: none;
+}
+
+canvas {
+  width: 100%;
+}
+
+.source_image_area {
+  display: none;
+}
+
+.footer-copyright {
+  text-align: center;
+  height: 50px;
+  font-size: 13px;
+  line-height: 2;
+  color: #8590a6;
+}
+
+.s1_5 {
+  width: 13.33333333333333333%;
+}
+
+.btn-thin {
+  width: 100%;
+  padding: 0;
+}
+
+.modal-color {
+  height: 43px;
+  max-width: 80px;
+  margin-top: 14px;
+}
+
+#palette_e {
+  display: none;
+}
+
+#confirm_change {
+  display: none;
+}
+
+nav {
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  background-clip: content-box;
+}
+
+nav a {
+  color: #8590a6;
+}
+
+.btn {
+  box-shadow: none;
+}
+
+#helper {
+  margin-top: 20px;
+}
+
+#source_image {
+  background: #fff;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  box-sizing: border-box;
+}
+
+.card {
+  margin-bottom: 10px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  box-sizing: border-box;
+  transition: all 0.2 ease;
+  width: 100%;
+}
+
+.card .card-header {
+  border-bottom: 1px solid #f0f2f7;
+  padding: 20px 15px;
+}
+
+.card .card-content {
+  padding: 16px 0;
+}
+
+.card .card-header h5 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-title {
+  display: flex;
+  font-size: 15px;
+  line-height: 20px;
+  height: 50px;
+  padding-bottom: 9px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ebebeb;
+  -webkit-box-align: center;
+  justify-content: center;
+  font-weight: 600;
+  align-items: center;
+  -webkit-box-pack: center;
+  margin-bottom: 15px;
+}
+
+.modal-content {
+  padding-top: 12px !important;
+}
+
+.modal-title h4 {
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.color-set-range {
+  display: flex;
+  align-items: center;
+}
+
+.color-set-range .color-tip {
+  padding-right: 15px;
+}
+
+input[type='text'].valid,
+input[type='text']:focus.valid,
+input[type='password'].valid,
+input[type='password']:focus.valid,
+input[type='email'].valid,
+input[type='email']:focus.valid,
+input[type='url'].valid,
+input[type='url']:focus.valid,
+input[type='time'].valid,
+input[type='time']:focus.valid,
+input[type='date'].valid,
+input[type='date']:focus.valid,
+input[type='datetime-local'].valid,
+input[type='datetime-local']:focus.valid,
+input[type='tel'].valid,
+input[type='tel']:focus.valid,
+input[type='number'].valid,
+input[type='number']:focus.valid,
+input[type='search'].valid,
+input[type='search']:focus.valid,
+textarea.materialize-textarea.valid,
+textarea.materialize-textarea:focus.valid {
+  border-bottom: 1px solid #0084ff !important;
+  box-shadow: 0 1px 0 0 #0084ff !important;
+}
+
+.big-logo {
+  margin-bottom: 25px;
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.load-card input {
+  padding-left: 15px;
+  border-radius: 3px;
+}
