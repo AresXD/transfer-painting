@@ -150,8 +150,12 @@ nav a {
   width: 100%;
 }
 
-.card {
+.original-image-card,
+.referral-image-card {
   flex: 1;
+}
+
+.card {
   margin-bottom: 10px;
   background: #fff;
   overflow: hidden;
