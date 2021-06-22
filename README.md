@@ -16,5 +16,14 @@
 
 
 
-点击迁移得到结果
+点击迁移得到结果（在风景类图像上表现较好）
+
+
+结果示例：
+![结果图片1](https://user-images.githubusercontent.com/48643924/122893535-00089c80-d379-11eb-8208-9e3ab141b565.jpg)
+
+
+
+![结果图片2](https://user-images.githubusercontent.com/48643924/122893577-06971400-d379-11eb-88aa-5f0d2ccbc713.jpg)
+
 
